@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gurbani</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="bar">
+        <div class="input div" id="menuButton">☰</div>
+        <input class="input" id="searchInput" placeholder="Type to Search">
+        <div class="input div" id="keyboardButton">⌨</div>
+        <br>
+        <div class="box hidden menu" id="menu">
+            <label for="searchModeSelector">Search Mode: </label>
+                <select class="input" name="searchModeSelector" id="searchModeSelector" >
+                    <option value="fullWord">Full Word</option>
+                    <option value="startsWithLetter">Starts With Letter</option>
+                </select>
+                <br>
+                <label for="translationSelector">Translations: </label>
+                <select class="input" name="translationSelector" id="tranlationSelector" >
+                    <option value="Prof. Sahib Singh Punjabi">Sahib Singh Punjabi</option>
+                    <option value="Bhai Manmohan Singh Punjabi">Manmohan Singh Punjabi</option>
+                    <option value="Fareedkot Teeka Punjabi">Fareedkot Teeka Punjabi</option>
+                    <option value="Bhai Manmohan Singh English">Manmohan Singh English</option>
+                    <option value="Dr. Sant Singh Khalsa Enlish">Sant Singh Khalsa English</option>
+                    <option value="SikhNet Spanish">SikhNet Spanish</option>
+                    <option value="none">Disabled</option>
+                </select>
+                <br>
+                <label for="pageInput">Page: </label>
+                <input class="input" id="pageInput" value="0">
+                <br>
+                <select class="input" name="sectionSelector" id="sectionSelector">
+                    <option value="">Shortcuts</option>
+                </select>
+        </div>
+    </div>
+
+    <div class="content" id="mainContent">
+        <p class="loading">Loading...</p>
+    </div>
+
+    <div class="footer">
+        <a value="0" id="prevButton">&lt;Prev</a>
+        <p class="total" id="totalContainer">0 out of 0</p>
+        <a value="0" id="nextButton">Next&gt;</a>
+    </div>
+</div>
+
+</body>
+</html>
